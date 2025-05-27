@@ -1,0 +1,33 @@
+/* ============================= MENU ============================== */
+body{
+    background: #999898;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    /* display: block;
+    margin-right: auto;
+    margin-left: auto; */
+    background: #435aca;
+}
+.menu-group{
+    display: flex;
+    margin-left:40px;
+}
+.menu-item  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-link{
+    padding: 32px;
+    font-size: 20px;
+    /* background: #435aca; */
+    color: #fff;
+}
+.active{
+    background: #fff;
+    color: #000;
+}
