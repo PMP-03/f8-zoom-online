@@ -1,0 +1,160 @@
+.drawer-open,
+.nav-open,
+.drawer-close,
+.nav-icon,
+.nav-wrapper .logo {
+    display: none;
+}
+/* xl */
+@media (max-width: 1399.98px) {
+    .hero__img-stick--2 {
+        width: 110px;
+    }
+}
+/* lg */
+@media (min-width: 1199.98px) {
+    /* ========== hero ============= */
+}
+/* md */
+@media (max-width: 991.98px) {
+    /* ================= nav ============= */
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        background: #000;
+        translate: -101%;
+        z-index: 99;
+        transition: all ease-in-out 0.3s;
+    }
+    .nav__link {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav__logo {
+        padding: 20px;
+    }
+    .drawer-open,
+    .nav-open,
+    .drawer-close {
+        display: inline-block;
+    }
+    .nav__close {
+        padding: 20px;
+        cursor: pointer;
+    }
+    .nav__close-icon {
+        width: 10px;
+        color: var(--color-btn);
+    }
+    #drawer:checked ~ .nav {
+        translate: 0;
+    }
+    .drawer-overplay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        visibility: hidden;
+        transition: all ease-in-out 0.3s;
+    }
+    #drawer:checked ~ .drawer-overplay {
+        opacity: 1;
+        visibility: visible;
+        z-index: 98;
+    }
+    .nav__group {
+        flex-direction: column;
+    }
+    .nav__list-link {
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+    .nav__list span {
+        color: var(--color-btn);
+    }
+    .nav__list-icon {
+        width: 10px;
+        color: var(--color-btn);
+    }
+    /* ================= hero ========================== */
+    .hero__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .hero__img {
+        margin-top: 150px;
+    }
+}
+/* sm */
+@media (max-width: 767.98px) {
+    /* ================= hero ========================== */
+    .hero__img-stick {
+        width: 130px;
+        height: 130px;
+        top: -70px;
+        left: -64px;
+    }
+    /* ================= about ========================== */
+    .about__inner {
+        padding: 30px 0;
+    }
+    .about__heading,
+    .about__desc {
+        padding-bottom: 15px;
+    }
+    .about__starts {
+        padding-bottom: 30px;
+    }
+    /* ================= services ========================== */
+    .services__inner {
+        padding: 50px 0;
+    }
+    /* ================= features ========================== */
+    .features__inner {
+        padding: 0;
+    }
+    .features__inner .row {
+        flex-direction: column-reverse;
+    }
+    .features-2 .features__inner {
+        padding: 50px 0;
+    }
+    /* ================= awards ========================== */
+    .awards__inner {
+        padding: 40px 0;
+    }
+    .awards__item {
+        display: inline-block;
+        width: 65%;
+        height: 100%;
+    }
+    /* ================= testimonial ========================== */
+    .testimonial__inner {
+        padding: 50px 0;
+    }
+    .testimonial__header-text {
+        width: 100%;
+    }
+    /* ================= faq ========================== */
+    .faq__inner {
+        padding: 40px 0;
+    }
+    /* ================= footer ========================== */
+    .footer__group {
+        flex-direction: column;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-top: 20px;
+    }
+}
+/* xs */
+@media (max-width: 575.98px) {
+}

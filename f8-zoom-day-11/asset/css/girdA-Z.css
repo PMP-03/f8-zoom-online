@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+.item{
+    padding: 10px;
+    background: #71cf57;
+    text-align: center;
+}
