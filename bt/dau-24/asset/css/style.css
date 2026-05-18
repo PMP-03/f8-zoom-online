@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        sans-serif;
+    background-color: #1e1e1f;
+    min-height: 100vh;
+}
+.wrapper{
+    border-radius: 8px;
+}
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+/* ============ Tabs =============== */
+.tabs:focus{
+    outline: none;
+}
+.tabs{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 8px;
+    max-width: 520px;
+    /* border: 1px solid #cecaca; */
+    border-radius: 8px;
+}
+.tabs-header{
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    border-bottom: 1px solid #cecaca;;
+    /* border: 1px solid #e5e7eb; */
+    border-radius: 8px 8px 0 0;
+    background: #ececee;
+}
+.tab-button{
+    padding: 8px 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+.tab-button.active{
+    background: #e87b35;
+    transition: all 0.3s ease-in-out;
+}
+.tabs-content{
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    background: #ececee;
+}
+.tab-content__pane{
+    display: none;
+}
+.tab-content__pane.active{
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.no-scroll{
+    overflow: hidden;
+}
+/* ================== slideshow ======================= */
+.slideshow{
+    position: relative;
+    overflow: hidden;
+}
+.slideshow .inner{
+    display: flex;
+    /* width: 100%; */
+    height: 400px;
+    /* transition: all 0.3s ease-in-out; */
+}
+.slide-item{
+    flex-shrink: 0;
+    height: 100%;
+    object-fit: contain;
+}
+.slide-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.controls .prev-btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    translate: 0 -50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(173, 176, 175, 0.5);
+    transition: all 0.2s ease-in;
+}
+.controls .prev-btn:hover{
+    background: rgba(173, 176, 175, 1 );
+}
+.prev-btn.prev, .prev-btn.next{
+    cursor: pointer;
+}
+.prev-btn.prev{
+    left: 1%;
+}
+.prev-btn.next{
+    right: 1%;
+}
+.slide-nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.slide-dot{
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;    
+    background: #888888;
+    cursor: pointer;
+}
+.slide-dot.active{
+    background: #fff;
+}
+/* ============== CheckAll ============== */
+.checks{
+    background: #ececee;
+}
+/* ============== modal ============== */
+.popzy__btn{
+    padding: 8px 20px;
+    background: rgb(160, 160, 128);
+}
+.popzy__btn--primary{
+    background: greenyellow;
+}
+.popzy__btn--danger{
+    background: rgb(212, 209, 46);
+}
